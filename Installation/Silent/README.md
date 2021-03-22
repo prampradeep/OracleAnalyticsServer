@@ -38,3 +38,31 @@ Response files contain information which is entered while using the GUI and is e
   -  oas.response
   -  config.response 
 
+## Fusion Middleware Infrastructure Installation
+
+Unzip the fusion middleware infrastructure (~1.5GB) download file. Make sure to update the fmw.respose files as needed before running this command. 
+
+    java -jar /u01/app/oas/softwares/fmw_12.2.1.4.0_infrastructure.jar -silent -responseFile /u01/app/oas/resposefiles/fmw.response
+
+## Patch on WLS
+
+Move the patch zip file to `[ORACLE_HOME]/OPatch` and unzip it there. change into the newly created path folder for ex `cd 30657796`.
+To apply patch use the below command.
+
+    [ORACLE_HOME]\OPatch\opatch apply -silent
+
+## Oracle Analytics Server Installtion
+
+Unzip the Oracle Analytics Server installer zip file (~3.5GB). Modify the oas.response file to the oracle_home path as per previous step.
+
+    java -jar /u01/app/oas/softwares/Oracle_Analytics_Server_Linux_5.9.0.jar -silent -responseFile /u01/app/oas/resposefiles/oas.response
+
+## Oracle Analytics Domain Configuration 
+
+Update the config.respose to include details of the domain_home, Database details (hostname,port, servicename and SYS details) and port information etc.
+
+    [ORACLE_HOME]/bi/bin/config.sh -silent -responseFile /u01/app/oas/resposefiles/config.response
+
+In case you want to ignore pre-requisite checks for some reason use below command.
+
+    [ORACLE_HOME]/bi/bin/config.sh -silent -responseFile /u01/app/oas/resposefiles/config.response -ignoreSysPrereqs
