@@ -20,9 +20,14 @@ Below are some of the simple checks we need to perform to make sure the environm
 
 Make sure your default java is pointed to the required JDK version. You can do this by using `java -version`
 
+![JavaVersion](/Installation/Silent/images/JavaVersion.png)
 
+
+### Install Directories
 
 Before we goahead with the software install we need to make sure to have the right folder structure to host the Fusion middleware software. Below is the recommended approach, to have the Oracle_Home and Domain_Home in different directories which will help in future upgardes.
+
+![InstallDirectories](/Installation/Silent/images/InstallDirectories.png)
 
 
 ## Response Files
