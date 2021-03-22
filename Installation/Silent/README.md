@@ -34,9 +34,9 @@ Before we goahead with the software install we need to make sure to have the rig
 
 Response files contain information which is entered while using the GUI and is essential for Installtion. We need to make sure the respose files are ready before proceeding with installtion. Sample respose files are attached.
 
-  -  fmw.response
-  -  oas.response
-  -  config.response 
+  -  [fmw.response](/Installation/Silent/responseFiles/fmw.response)
+  -  [oas.response](/Installation/Silent/responseFiles/oas.response)
+  -  [config.response](/Installation/Silent/responseFiles/config.response)
 
 ## Fusion Middleware Infrastructure Installation
 
