@@ -1,5 +1,5 @@
 
-# Oracle Analytics Server - Silent Installtion
+# Oracle Analytics Server - Silent Installation
 
 Below is an outline of what steps to be performed for Installing Oracle Analytics Server in Silent mode (without GUI) very easily. It will be of great use in situaltions where you have to install on multiple nodes on regular basis, where you dont have GUI or you need to automate the install process.
 
