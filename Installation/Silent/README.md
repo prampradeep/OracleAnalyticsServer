@@ -16,6 +16,24 @@ Below is an outline of what steps to be performed for Installing Oracle Analytic
 
 Below are some of the simple checks we need to perform to make sure the environment is ready for installtion.
 
+### RPM packages
+
+Make sure below system packages are available , below is an example for Linux-x86-64
+
+    binutils-2.23.52.0.1
+    compat-libcap1-1.10
+    compat-libstdc++-33-3.2.3-x86_64
+    libgcc-4.8.2-x86_64
+    libstdc++-4.8.2-x86_64
+    libstdc++-devel-4.8.2-x86_64
+    sysstat-10.1.5
+    gcc-4.8.2
+    gcc-c++-4.8.2
+    make-3.82
+    glibc-2.17-x86_64
+    glibc-devel-2.17-x86_64
+    libaio-0.3.109-x86_64
+
 ### Verify JDK 
 
 Make sure your default java is pointed to the required JDK version. You can do this by using `java -version`
